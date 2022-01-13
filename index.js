@@ -109,10 +109,11 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(name, rating, feedback){
-  
+function addReview(reviews, name, rating, feedback){
+  reviews.push({name, rating, feedback});
+    return reviews;
 }
-
+console.log(addReview( reviews,'Daniela', 5,'Beautiful atmosphere and wonderful vegan options!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
